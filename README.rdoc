@@ -1,28 +1,25 @@
-== README
+== PermaDB
+#-----------------------
+*Ruby Version:* 2.1.2
+*Rails Version:* 4.1.4
+#-----------------------
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+_PermaDB is the concept for an online database of plants, animals, articles and references pertaining to the world of Permaculture; maintained and moderated by its' users._
 
-Things you may want to cover:
+I wanted to build permaDB as a go-to place for specific information about plants and animals. Since there's such a variety of different books, texts and online courses that explain concepts (often in different manners) - by having content user-managed there's a better chance of information remaining up-to-date, and (hopefully) as objectively as possible.
 
-* Ruby version
+=== Current Features
+None yet... :-(
 
-* System dependencies
+=== Planned Features
+* User roles (Admins, Members, Guests)
+* Support for image uploads
+* Tags for plants/animals/articles
+* Categories for plants/animals/articles
+* Search function
+*
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+== Working on...
+* Administrator model
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
