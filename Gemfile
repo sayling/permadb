@@ -52,18 +52,17 @@ group :doc do
 end
 
 group :development, :test do
+  gem 'simplecov', :require => false
+  gem 'faker'
   gem 'rspec-rails'
   gem 'factory_girl_rails'
   gem 'rspec'
   gem 'rubocop'
   gem 'parallel_tests'
-end
-
-group :test do
-  gem 'faker'
-  gem 'capybara'
   gem 'guard'
+  gem 'guard-rspec', require: false
+  gem 'capybara'
   gem 'launchy'
   gem 'shoulda'
-  gem 'simplecov'
+  gem 'shoulda-matchers'
 end

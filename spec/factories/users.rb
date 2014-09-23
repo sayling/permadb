@@ -4,7 +4,7 @@ FactoryGirl.define do
   factory :user do
     first_name Faker::Name.first_name
     last_name Faker::Name.last_name
-    username Faker::Interner.user_name('normal user')
+    username Faker::Internet.user_name('normal user')
     email Faker::Internet.safe_email
     location "#{Faker::Address.state}, #{Faker::Address.country}"
     climate 'Cool Temperate'
@@ -16,7 +16,7 @@ FactoryGirl.define do
   factory :moderator do
     first_name Faker::Name.first_name
     last_name Faker::Name.last_name
-    username Faker::Interner.user_name('moderator')
+    username Faker::Internet.user_name('moderator')
     email Faker::Internet.safe_email
     location "#{Faker::Address.state}, #{Faker::Address.country}"
     climate 'Arid'
@@ -28,7 +28,7 @@ FactoryGirl.define do
   factory :admin do
     first_name Faker::Name.first_name
     last_name Faker::Name.last_name
-    username Faker::Interner.user_name('super wizard admin')
+    username Faker::Internet.user_name('super wizard admin')
     email Faker::Internet.safe_email
     location "#{Faker::Address.state}, #{Faker::Address.country}"
     climate 'Arid'
