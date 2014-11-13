@@ -10,7 +10,7 @@ _PermaDB is the concept for an online database of plants, animals, articles and 
 I wanted to build permaDB as a go-to place for specific information about plants and animals. Since there's such a variety of different books, texts and online courses that explain concepts (often in different manners) - by having content user-managed there's a better chance of information remaining up-to-date, and (hopefully) as objectively as possible.
 
 === Current Features
-None yet... :-(
+* Users! Yay!
 
 === Planned Features
 * User roles (Admins, Members, Guests)
@@ -18,9 +18,12 @@ None yet... :-(
 * Tags for plants/animals/articles
 * Categories for plants/animals/articles
 * Search function
-*
+* Administrator model
 
 == Working on...
-* Administrator model
+* Users (Create, Update, etc)
+* Plants (Create, update, etc)
+* Animals (Create, Update, etc)
+
 
 
