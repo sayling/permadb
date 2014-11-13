@@ -1,14 +1,23 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/Sammyjo/Projects/permadb/spec/controllers/home_controller_spec.rb": [
+      "/Users/Sammyjo/Projects/permadb/spec/controllers/users_controller_spec.rb": [
         1,
         null,
         1,
+        1,
+        1,
+        2,
+        null,
         null,
         1,
         1,
+        null,
+        null,
         1,
+        1,
+        null,
+        null,
         null,
         null,
         null
@@ -486,6 +495,7 @@
         1,
         1,
         1,
+        1,
         null,
         null,
         1,
@@ -520,6 +530,8 @@
         1,
         1,
         null,
+        1,
+        null,
         null
       ],
       "/Users/Sammyjo/Projects/permadb/app/models/user.rb": [
@@ -540,10 +552,16 @@
         1,
         null
       ],
-      "/Users/Sammyjo/Projects/permadb/app/controllers/home_controller.rb": [
+      "/Users/Sammyjo/Projects/permadb/app/helpers/users_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/Sammyjo/Projects/permadb/app/controllers/users_controller.rb": [
         1,
         null,
         1,
+        2,
+        2,
         null,
         null,
         null
@@ -558,6 +576,6 @@
         null
       ]
     },
-    "timestamp": 1411466363
+    "timestamp": 1415876284
   }
 }

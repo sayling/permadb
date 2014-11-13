@@ -6,6 +6,7 @@ FactoryGirl.define do
     last_name Faker::Name.last_name
     username Faker::Internet.user_name('normal user')
     email Faker::Internet.safe_email
+    password Faker::Internet.password
     location "#{Faker::Address.state}, #{Faker::Address.country}"
     climate 'Cool Temperate'
     short_bio Faker::Lorem.sentence(1)
@@ -18,6 +19,7 @@ FactoryGirl.define do
     last_name Faker::Name.last_name
     username Faker::Internet.user_name('moderator')
     email Faker::Internet.safe_email
+    password Faker::Internet.password
     location "#{Faker::Address.state}, #{Faker::Address.country}"
     climate 'Arid'
     short_bio Faker::Lorem.sentence(1)
@@ -30,6 +32,7 @@ FactoryGirl.define do
     last_name Faker::Name.last_name
     username Faker::Internet.user_name('super wizard admin')
     email Faker::Internet.safe_email
+    password Faker::Internet.password
     location "#{Faker::Address.state}, #{Faker::Address.country}"
     climate 'Arid'
     short_bio Faker::Lorem.sentence(1)

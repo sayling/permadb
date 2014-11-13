@@ -1,0 +1,26 @@
+<h2><%= @title %></h2>
+<table>
+    <tr>
+      <th>Name</th>
+      <th>Email Address</th>
+      <th>Username</th>
+      <th>Location</th>
+      <th>Climate</th>
+      <th>Role</th>
+    </tr>
+
+    <% @users.each do |user| %>
+    <tr>
+      <td><%= user.first_name %> <%= user.last_name %></td>
+      <td><%= user.email %></td>
+      <td><%= user.username %></td>
+      <td><%= user.location %></td>
+      <td><%= user.climate %></td>
+      <td><%= user.role %></td>
+    </tr>
+    <% end %>
+
+  </table>
+
+
+
