@@ -17,8 +17,15 @@
       <td><%= user.location %></td>
       <td><%= user.climate %></td>
       <td><%= user.role %></td>
+      <td>
+        <%= link_to 'edit', edit_user_registration_path %> <br />
+        <%= link_to 'Remove User', registration_path(user), :data => { :confirm => 'Are you reaaally sure?' }, :method => :delete %>
+      </td>
     </tr>
     <% end %>
+
+  <p><%= link_to 'Create a new user', new_user_registration_path %></p>
+
 
   </table>
 
