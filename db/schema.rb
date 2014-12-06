@@ -11,10 +11,28 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141206001357) do
+ActiveRecord::Schema.define(version: 20141206073319) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "animals", force: true do |t|
+    t.string   "common_name"
+    t.string   "scientific_name"
+    t.string   "image"
+    t.text     "description"
+    t.string   "country_of_origin"
+    t.text     "biological_properties"
+    t.text     "domestic_properties"
+    t.string   "best_climate"
+    t.text     "rearing_info"
+    t.text     "diet"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "animals", ["user_id"], name: "index_animals_on_user_id", using: :btree
 
   create_table "plants", force: true do |t|
     t.string   "common_name",          null: false

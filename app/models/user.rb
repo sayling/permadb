@@ -10,5 +10,6 @@ class User < ActiveRecord::Base
   validates :role, presence: true
 
   has_many :plants
+  has_many :animals
 
 end

@@ -1,0 +1,11 @@
+<p id="notice"><%= notice %></p>
+
+<%= @user.first_name %> <%= @user.last_name %><br />
+<p><em><%= @user.username %></em></p>
+
+<p><%= @user.long_bio %></p>
+
+<p><strong>Number of items contributed to:</strong> <%= (@user.plants.count) + (@user.animals.count) %></p>
+
+
+<strong><%= link_to 'Back', users_path %></strong>

@@ -58,3 +58,18 @@ Excessive consumption of parsley should be avoided by pregnant women. It is safe
     growing_instructions: "Parsley grows best in moist, well-drained soil, with full sun. It grows best between 22–30 °C, and usually is grown from seed. Germination is slow, taking four to six weeks, and it often is difficult because of furanocoumarins in its seed coat. Typically, plants grown for the leaf crop are spaced 10 cm apart, while those grown as a root crop are spaced 20 cm apart to allow for the root development",
     user: User.first
 )
+
+Animal.create(
+  common_name: 'Australorp',
+  scientific_name: 'Unknown',
+  image: "http://www.barterandsons.com.au/images/products/Australorp.jpg",
+  description: "The Australorp is a chicken breed of Australian origin, developed as utility breed with a focus on egg laying. It achieved world wide popularity in the 1920s after the breed broke numerous world records for number of eggs laid and has been a popular breed in the western world since.",
+  country_of_origin: 'Australia',
+  biological_properties: 'A breed developed for their superior egg-laying abilities, the Australorp is a popular choice among poultry rearers. They are relatively large birds, with gentle temperaments - and are generally considered to be quiet birds.',
+  domestic_properties: 'Due to their egg-laying abilities and their large size, the Australorp is considered an optimal breed of chicken for both meat and eggs. As they are considered gentle and quiet birds, the Australorp is often a favourite for first-time chicken owners.',
+  best_climate: 'Most climates',
+  rearing_info: 'All chickens require room in which to run around, access to scratchings and clean water. Chickens also enjoy dust-baths, an activity cruicial for their mental health. For areas which require it, additional food (in the form of pellets or supplemented feed) can be provided in addition to foraged food.',
+  diet: 'Insects, small seeds, vegetable scraps, grains, pellets (formulated for chickens).',
+  user: User.first
+)
+

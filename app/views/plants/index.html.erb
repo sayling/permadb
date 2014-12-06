@@ -22,9 +22,9 @@
         <td><%= plant.country_of_origin %></td>
         <td><%= plant.climate %></td>
         <td><%= plant.user.first_name %></td>
-        <td><%= button_to 'Show', plant, class: 'btn btn-sml' %></td>
-        <td><%= button_to 'Edit', edit_plant_path(plant), class: 'btn btn-sml' %></td>
-        <td><%= button_to 'Destroy', plant, method: :delete, class: 'btn btn-sml', data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', plant, class: 'btn btn-sml' %></td>
+        <td><%= link_to 'Edit', edit_plant_path(plant), class: 'btn btn-sml' %></td>
+        <td><%= link_to 'Destroy', plant, method: :delete, class: 'btn btn-sml', data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
