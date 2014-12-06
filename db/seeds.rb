@@ -44,3 +44,17 @@ User.create(
     long_bio: "Tattooed butcher +1, Schlitz Etsy trust fund stumptown Carles Wes Anderson keffiyeh tote bag Tonx. Gastropub bicycle rights put a bird on it, cliche banjo selfies brunch Echo Park swag mumblecore street art. Chillwave sartorial forage cardigan Wes Anderson. Seitan hella irony, keytar before they sold out Vice Kickstarter deep v single-origin coffee typewriter Schlitz. Forage twee 3 wolf moon irony, kogi paleo disrupt lo-fi YOLO. Next level meh +1 pour-over you probably haven't heard of them jean shorts, single-origin coffee DIY drinking vinegar actually dreamcatcher. Seitan Truffaut 3 wolf moon flannel, wolf kale chips tousled art party retro cliche small batch McSweeney's master cleanse pour-over.",
     role: 'admin'
 )
+
+Plant.create(
+    common_name: 'Flat-leaf Parsley',
+    scientific_name: 'Petroselinum crispum neapolitanum',
+    image: "http://1.bp.blogspot.com/-duReaZc6iGI/T2H6T4JM9BI/AAAAAAAAAU8/pQpt8EMHlZ0/s1600/5+Parsley+flat+leaf.jpg",
+    description: "Parsley is widely used in Middle Eastern, European, Brazilian and American cooking. Curly leaf parsley is used often as a garnish. Green parsley is used frequently as a garnish on potato dishes (boiled or mashed potatoes), on rice dishes (risotto or pilaf), on fish, fried chicken, lamb, goose, and steaks, as well in meat or vegetable stews (including shrimp creole, beef bourguignon, goulash, or chicken paprikash). Where Parsley it grows as a biennial, in the first year, it forms a rosette of tripinnate leaves 10–25 cm long with numerous 1–3 cm leaflets, and a taproot used as a food store over the winter.",
+    country_of_origin: "Central Mediterranean",
+    botanical_properties: "Parsley is a shade-tolerant herbaceous shrub, which can grow to 1m in height. It requires moderate watering once established and is frost-sensitive.",
+    domestic_properties: "Parsley is a source of Flavonoid, and Antioxidants (especially luteolin), apigenin, folic acid, vitamin K, vitamin C, and vitamin A. Half a of tablespoon (a gram) of dried parsley contains about 6.0 µg of lycopene and 10.7 µg of alpha carotene as well as 82.9 µg of Lutein+Zeaxanthin and 80.7 µg of beta carotene.
+Excessive consumption of parsley should be avoided by pregnant women. It is safe in normal food quantities, but large amounts may have uterotonic effects.",
+    climate: "Temperate",
+    growing_instructions: "Parsley grows best in moist, well-drained soil, with full sun. It grows best between 22–30 °C, and usually is grown from seed. Germination is slow, taking four to six weeks, and it often is difficult because of furanocoumarins in its seed coat. Typically, plants grown for the leaf crop are spaced 10 cm apart, while those grown as a root crop are spaced 20 cm apart to allow for the root development",
+    user: User.first
+)

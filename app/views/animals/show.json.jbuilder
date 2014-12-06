@@ -1,0 +1,1 @@
+json.extract! @animal, :id, :common_name, :scientific_name, :image, :description, :country_of_origin, :biological_properties, :domestic_properties, :best_climate, :rearing_info, :diet, :user_id, :created_at, :updated_at

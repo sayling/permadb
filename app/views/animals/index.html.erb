@@ -1,0 +1,45 @@
+<h1>Listing animals</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Common name</th>
+      <th>Scientific name</th>
+      <th>Image</th>
+      <th>Description</th>
+      <th>Country of origin</th>
+      <th>Biological properties</th>
+      <th>Domestic properties</th>
+      <th>Best climate</th>
+      <th>Rearing info</th>
+      <th>Diet</th>
+      <th>User</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @animals.each do |animal| %>
+      <tr>
+        <td><%= animal.common_name %></td>
+        <td><%= animal.scientific_name %></td>
+        <td><%= animal.image %></td>
+        <td><%= animal.description %></td>
+        <td><%= animal.country_of_origin %></td>
+        <td><%= animal.biological_properties %></td>
+        <td><%= animal.domestic_properties %></td>
+        <td><%= animal.best_climate %></td>
+        <td><%= animal.rearing_info %></td>
+        <td><%= animal.diet %></td>
+        <td><%= animal.user %></td>
+        <td><%= link_to 'Show', animal %></td>
+        <td><%= link_to 'Edit', edit_animal_path(animal) %></td>
+        <td><%= link_to 'Destroy', animal, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Animal', new_animal_path %>

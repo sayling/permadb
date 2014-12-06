@@ -9,4 +9,6 @@ class User < ActiveRecord::Base
   validates_length_of :short_bio, maximum: 250
   validates :role, presence: true
 
+  has_many :plants
+
 end

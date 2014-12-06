@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Common name:</strong>
+  <%= @plant.common_name %>
+</p>
+
+<p>
+  <strong>Scientific name:</strong>
+  <%= @plant.scientific_name %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @plant.image %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @plant.description %>
+</p>
+
+<p>
+  <strong>Country of origin:</strong>
+  <%= @plant.country_of_origin %>
+</p>
+
+<p>
+  <strong>Botanical properties:</strong>
+  <%= @plant.botanical_properties %>
+</p>
+
+<p>
+  <strong>Domestic properties:</strong>
+  <%= @plant.domestic_properties %>
+</p>
+
+<p>
+  <strong>Climate:</strong>
+  <%= @plant.climate %>
+</p>
+
+<p>
+  <strong>Growing instructions:</strong>
+  <%= @plant.growing_instructions %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= "Created by #{@plant.user.first_name} #{@plant.user.last_name}" %>
+</p>
+
+<%= link_to 'Edit', edit_plant_path(@plant) %> |
+<%= link_to 'Back', plants_path %>

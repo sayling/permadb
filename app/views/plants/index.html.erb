@@ -1,0 +1,35 @@
+<h1>Listing plants</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Common name</th>
+      <th>Scientific name</th>
+      <th>Image</th>
+      <th>Country of origin</th>
+      <th>Climate</th>
+      <th>Created by</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @plants.each do |plant| %>
+      <tr>
+        <td><%= link_to plant.common_name, plant %></td>
+        <td><%= plant.scientific_name %></td>
+        <td><%= image_tag plant.image, height: 100, width: 100 %></td>
+        <td><%= plant.country_of_origin %></td>
+        <td><%= plant.climate %></td>
+        <td><%= plant.user.first_name %></td>
+        <td><%= button_to 'Show', plant, class: 'btn btn-sml' %></td>
+        <td><%= button_to 'Edit', edit_plant_path(plant), class: 'btn btn-sml' %></td>
+        <td><%= button_to 'Destroy', plant, method: :delete, class: 'btn btn-sml', data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Plant', new_plant_path %>

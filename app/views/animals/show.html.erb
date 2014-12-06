@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Common name:</strong>
+  <%= @animal.common_name %>
+</p>
+
+<p>
+  <strong>Scientific name:</strong>
+  <%= @animal.scientific_name %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @animal.image %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @animal.description %>
+</p>
+
+<p>
+  <strong>Country of origin:</strong>
+  <%= @animal.country_of_origin %>
+</p>
+
+<p>
+  <strong>Biological properties:</strong>
+  <%= @animal.biological_properties %>
+</p>
+
+<p>
+  <strong>Domestic properties:</strong>
+  <%= @animal.domestic_properties %>
+</p>
+
+<p>
+  <strong>Best climate:</strong>
+  <%= @animal.best_climate %>
+</p>
+
+<p>
+  <strong>Rearing info:</strong>
+  <%= @animal.rearing_info %>
+</p>
+
+<p>
+  <strong>Diet:</strong>
+  <%= @animal.diet %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @animal.user %>
+</p>
+
+<%= link_to 'Edit', edit_animal_path(@animal) %> |
+<%= link_to 'Back', animals_path %>
