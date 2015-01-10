@@ -2,16 +2,16 @@
 
 FactoryGirl.define do
   factory :animal do
-    common_name "MyString"
-    scientific_name "MyString"
-    image "MyString"
-    description "MyText"
-    country_of_origin "MyString"
-    biological_properties "MyText"
-    domestic_properties "MyText"
-    best_climate "MyString"
-    rearing_info "MyText"
-    diet "MyText"
-    user nil
+    common_name 'MyString'
+    scientific_name 'MyString'
+    image 'MyString'
+    description 'MyText'
+    country_of_origin 'MyString'
+    biological_properties 'MyText'
+    domestic_properties 'MyText'
+    best_climate 'MyString'
+    rearing_info 'MyText'
+    diet 'MyText'
+    user { FactoryGirl.build(:user).id }
   end
 end
