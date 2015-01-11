@@ -1,0 +1,45 @@
+body {
+  background:
+    /* top, transparent black, faked with gradient */
+    linear-gradient(
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+    ),
+      /* bottom, image */
+    url(homebg.jpg);
+  background-size: cover;
+}
+
+
+p {
+  color: #FF0000;
+}
+
+h1 {
+  color: #FFF;
+  font-size: 25pt;
+}
+
+h2{
+  color: #FFF;
+  font-size: 18pt;
+}
+
+
+a {
+  padding: 15px 10px;
+  border: 1px solid white;
+  color: #FFF;
+  text-decoration: none;
+}
+
+
+.intro {
+  padding-top: 15%;
+  padding-left: 20%;
+}
+
+.logo {
+  padding-top: 5%;
+  padding-left: 20%;
+}
