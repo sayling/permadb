@@ -265,6 +265,7 @@ DEPENDENCIES
   pg
   pry
   rails (= 4.1.4)
+  rake
   ransack
   rspec
   rspec-rails
