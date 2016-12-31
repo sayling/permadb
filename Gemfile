@@ -66,3 +66,8 @@ group :development, :test do
   gem 'shoulda'
   gem 'shoulda-matchers'
 end
+
+group :test do
+  gem 'rake'
+end
+

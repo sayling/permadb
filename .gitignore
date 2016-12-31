@@ -19,4 +19,7 @@
 /.idea
 
 # ignore DS_STORE OSX files.
-/.DS_STORE
+.DS_STORE
+
+#coverage files
+/coverage
