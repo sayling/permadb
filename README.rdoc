@@ -4,6 +4,8 @@
 
 *Rails* *Version:* 4.1.4
 
+![build status](https://travis-ci.org/sammyjopeters/forage-app.svg?branch=master)
+
 
 _PermaDB is the concept for an online database of plants, animals, articles and references pertaining to the world of Permaculture; maintained and moderated by its' users._
 
