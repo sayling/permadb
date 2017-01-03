@@ -5,5 +5,7 @@ rvm:
 services:
   - postgresql
 before_script:
+  - before_script:
+  - psql -c "CREATE USER permadb WITH PASSWORD 'permadb';" -U postgres
   - psql -c 'create database permadb_test;' -U postgres
 script: bundle exec rspec spec
